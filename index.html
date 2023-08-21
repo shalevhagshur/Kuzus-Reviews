@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuzu's Dairy</title>
+</head>
+<body>
+    <h1>Welcome to Kuzu's Dairy</h1>
+    <form id="entryForm">
+        <label for="entryText">Diary Entry:</label>
+        <textarea id="entryText" rows="4" cols="50"></textarea>
+        <br>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" min="1" max="5">
+        <br>
+        <button type="button" onclick="addEntry()">Add Entry</button>
+    </form>
+    <div id="entries"></div>
+    <script src="script.js"></script>
+</body>
+</html>
